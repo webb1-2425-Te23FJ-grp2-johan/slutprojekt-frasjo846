@@ -4,32 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elefantopedia</title>
-    <link rel="stylesheet" href="css/style.css" />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=list"
     />
+    <script defer src="js/main.js"></script>
+    <script defer src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="center">
-      <img src="" alt="" />
       <h1>Världens Elefanter</h1>
     </header>
-    <nav>
-      <div class="innehall innehallBtn">
-        <div><span class="material-symbols-outlined"> list </span></div>
-        <div><h2>Innehåll</h2></div>
+    <nav class="block">
+      <h2
+        id="menu-content"
+        class="text-2xl font-semibold text-gray-800 cursor-pointer mb-2"
+      >
+        Innehåll
+      </h2>
+      <div
+        id="nav-menu"
+        class="hidden bg-gray-800 text-white rounded-md shadow-md"
+      >
+        <div class="px-4 py-4">
+          <ul class="space-y-2">
+            <li>
+              <a href="#intro" class="ContentMenuBtn block">Intro</a>
+            </li>
+            <li>
+              <a href="#asiatisk" class="ContentMenuBtn block"
+                >Asiatisk elefant</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-      <ul>
-        <li><a href="#asiatisk">Asiatisk elefant</a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-      </ul>
     </nav>
-    <main>
+    <main class="block">
       <div>
-        <article class="card">
-          <div class="center"><h2>Intro</h2></div>
+        <article class="card" id="intro">
+          <div class="center"><h2 class="cardTitle">Intro</h2></div>
           <div><p>Elefanter är djur</p></div>
         </article>
         <article class="card" id="asiatisk">

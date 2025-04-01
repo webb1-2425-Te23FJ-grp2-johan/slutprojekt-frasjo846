@@ -1,29 +1,73 @@
 * {
   box-sizing: content-box;
 }
+:root {
+  /* Base 16 px */
+  font-size: 16px;
+
+  /* My color variables */
+  --header-primary: white;
+  --nav-primary: rgba(121, 94, 94, 0.568);
+  --card-primar: blanchedalmond;
+  --main-bg-primary: darkgray;
+
+  --text-primary: rgb(255, 111, 0);
+  --logo-prmary: rgb(17, 0, 255);
+  --bg-primary: rgb(109, 0, 129);
+
+  /* My img variables */
+  --header-bg: url(../assets-raw/elefant-asiatisk.png);
+}
 img {
   display: block;
+}
+header {
+  color: var(--header-primary);
+  background-image: var(--header-bg);
+}
+nav {
+  background-color: var(--nav-primary);
+}
+main {
+  background-color: var(--main-bg-primary);
+  margin-top: 0.5rem;
+}
+.block {
+  padding: 1rem;
+  border-radius: 20px;
+  margin: 3px 0;
 }
 .center {
   display: flex;
   text-align: center;
   justify-content: center;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
 }
 .card {
-  border-radius: 10px;
-  padding: 5%;
-  background-color: blanchedalmond;
+  border-radius: 4px;
+  padding: 1rem;
+  background-color: var(--card-primar);
   margin: 10px;
 }
-.innehall{
+.cardTitle {
+  margin-top: 0;
+}
+.content {
   display: flex;
   flex-direction: row;
 }
+.ContentMenuBtn:hover {
+  color: blue;
 
+  transition: 400ms;
+  animation-duration: 300ms;
+}
+
+.hidden{
+  display: none;
+}
 @media screen and (min-width: 600px) {
   .innehallBtn {
     display: none;
-
   }
 }
