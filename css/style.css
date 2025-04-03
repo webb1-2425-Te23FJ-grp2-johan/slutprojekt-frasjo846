@@ -1,14 +1,17 @@
 * {
   box-sizing: content-box;
 }
+body{
+  background-image: linear-gradient(to bottom, #a7afb3 , #d3d7d9);
+}
 :root {
   /* Base 16 px */
   font-size: 16px;
 
   /* My color variables */
   --header-primary: white;
-  --nav-primary: rgba(121, 94, 94, 0.568);
-  --card-primar: blanchedalmond;
+  --nav-primary: #a7afb3;
+  --card-primar: #d3d7d9;
   --main-bg-primary: darkgray;
 
   --text-primary: rgb(255, 111, 0);
@@ -24,6 +27,7 @@ img {
 header {
   color: var(--header-primary);
   background-image: var(--header-bg);
+  height: 50px;
 }
 nav {
   background-color: var(--nav-primary);
@@ -33,10 +37,22 @@ main {
   margin-top: 0.5rem;
 }
 .block {
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 20px;
   margin: 3px 0;
+  cursor: pointer;
 }
+.nav-menu {
+  transition: 4s;
+}
+
+#menu-content {
+  font-size: 2rem;
+  text-decoration: double;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
 .center {
   display: flex;
   text-align: center;
@@ -58,16 +74,27 @@ main {
 }
 .ContentMenuBtn:hover {
   color: blue;
-
+  font-size: 150%;
   transition: 400ms;
-  animation-duration: 300ms;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
-@media screen and (min-width: 600px) {
-  .innehallBtn {
-    display: none;
+
+.content-blocks {
+  background-color: var(--card-primar);
+}
+
+#content-drop-down {
+  transition: 1s;
+}
+.arrowmove {
+  transform: scale(-1);
+}
+
+@media screen and (min-width: 680px) {
+  .class {
+    color: red;
   }
 }
