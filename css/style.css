@@ -12,7 +12,8 @@ body{
   --header-primary: white;
   --nav-primary: #a7afb3;
   --card-primar: #d3d7d9;
-  --main-bg-primary: darkgray;
+  --main-bg-primary: #a9a9a9;
+  --footer-bg-primary: #807e7e;
 
   --text-primary: rgb(255, 111, 0);
   --logo-prmary: rgb(17, 0, 255);
@@ -59,12 +60,35 @@ main {
   justify-content: center;
   /* background-color: aquamarine; */
 }
+#intro{
+  grid-area: intro;
+}
+#asiatisk{
+  grid-area: asiatisk;
+}
+#afrikansk{
+  grid-area: afrikansk;
+}
+#indisk{
+  grid-area: indisk;
+}
+.cardgrid{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "intro"
+  "asiatisk"
+  "afrikansk"
+  "indisk"
+  ;
+}
 .card {
   border-radius: 4px;
   padding: 1rem;
   background-color: var(--card-primar);
   margin: 10px;
 }
+
 .cardTitle {
   margin-top: 0;
 }
@@ -89,12 +113,36 @@ main {
 #content-drop-down {
   transition: 1s;
 }
-.arrowmove {
+.invertscale {
   transform: scale(-1);
+}
+
+footer{
+  background-color: var(--footer-bg-primary);
+  padding: 20px;
+  margin: 0;
 }
 
 @media screen and (min-width: 680px) {
   .class {
     color: red;
+  }
+  .cardgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    ".      intro     intro     ."
+    "asiatisk   asiatisk  afrikansk afrikansk"
+    ".          indisk    indisk    .";
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .cardgrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "intro     intro      intro"
+    "asiatisk   afrikansk indisk";
   }
 }
