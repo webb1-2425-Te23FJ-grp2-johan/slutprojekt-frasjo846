@@ -1,8 +1,9 @@
 * {
   box-sizing: content-box;
 }
-body{
-  background-image: linear-gradient(to bottom, #a7afb3 , #d3d7d9);
+body {
+  background-image: linear-gradient(to bottom, #a7afb3, #d3d7d9);
+  margin: 0;
 }
 :root {
   /* Base 16 px */
@@ -12,6 +13,7 @@ body{
   --header-primary: white;
   --nav-primary: #a7afb3;
   --card-primar: #d3d7d9;
+  --card-shadow-primary: rgba(172, 132, 132, 0.582);
   --main-bg-primary: #a9a9a9;
   --footer-bg-primary: #807e7e;
 
@@ -60,33 +62,35 @@ main {
   justify-content: center;
   /* background-color: aquamarine; */
 }
-#intro{
+#intro {
   grid-area: intro;
 }
-#asiatisk{
+#asiatisk {
   grid-area: asiatisk;
 }
-#afrikansk{
+#afrikansk {
   grid-area: afrikansk;
 }
-#indisk{
+#indisk {
   grid-area: indisk;
 }
-.cardgrid{
+.cardgrid {
+  margin-bottom: 0;
+  border-radius: 20px 20px 0 0;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: 
-  "intro"
-  "asiatisk"
-  "afrikansk"
-  "indisk"
-  ;
+  grid-template-areas:
+    "intro"
+    "asiatisk"
+    "afrikansk"
+    "indisk";
 }
 .card {
   border-radius: 4px;
   padding: 1rem;
   background-color: var(--card-primar);
   margin: 10px;
+  box-shadow: 0.5rem 0.5rem 0.1rem 0.1rem var(--card-shadow-primary);
 }
 
 .cardTitle {
@@ -96,18 +100,29 @@ main {
   display: flex;
   flex-direction: row;
 }
+.ContentMenuBtn {
+  color: black;
+  background-color: var(--footer-bg-primary);
+}
 .ContentMenuBtn:hover {
   color: blue;
   font-size: 150%;
   transition: 400ms;
 }
 
-.hidden {
-  display: none;
-}
-
 .content-blocks {
   background-color: var(--card-primar);
+  list-style: circle;
+  list-style-position: inside;
+}
+.content-blocks li {
+  margin: 0.1rem 0;
+  padding: 0.5rem;
+  border-radius: 10px;
+  width: auto;
+}
+.hidden {
+  display: none;
 }
 
 #content-drop-down {
@@ -117,7 +132,7 @@ main {
   transform: scale(-1);
 }
 
-footer{
+footer {
   background-color: var(--footer-bg-primary);
   padding: 20px;
   margin: 0;
@@ -127,22 +142,22 @@ footer{
   .class {
     color: red;
   }
-  .cardgrid{
+  .cardgrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    ".      intro     intro     ."
-    "asiatisk   asiatisk  afrikansk afrikansk"
-    ".          indisk    indisk    .";
+    grid-template-areas:
+      ".      intro     intro     ."
+      "asiatisk   asiatisk  afrikansk afrikansk"
+      ".          indisk    indisk    .";
   }
 }
 
 @media screen and (min-width: 980px) {
-  .cardgrid{
+  .cardgrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "intro     intro      intro"
-    "asiatisk   afrikansk indisk";
+    grid-template-areas:
+      "intro     intro      intro"
+      "asiatisk   afrikansk indisk";
   }
 }
