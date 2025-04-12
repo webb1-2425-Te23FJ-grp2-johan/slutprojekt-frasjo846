@@ -1,0 +1,13 @@
+Elefant palett:
+https://www.color-hex.com/color-palette/1034572
+Savann:
+https://www.pinterest.com/pin/color-palette-ideas-from-1478-sunrise-images--828803137652259242/
+
+
+Bilder:
+<picture>
+          <source media="(min-width:1200px)" srcset="img/car-3-600x800.webp" />
+          <source media="(min-width:900px)" srcset="img/car-2-375x510.webp" />
+          <source media="(min-width:600px)" srcset="img/car-1-560x510.webp" />
+          <img src="img/car-0-550x250.webp" alt="car" />
+</picture>
