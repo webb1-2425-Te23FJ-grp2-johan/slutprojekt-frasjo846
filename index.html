@@ -11,7 +11,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_drop_down"
     />
-
+    <!-- Lightbox -->
+    <script defer src="js/simple-lightbox.min.js"></script>
+    <link rel="stylesheet" href="css/simple-lightbox.min.css" />
+    <!-- Min CSS -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -45,6 +48,7 @@
                 <a href="#afrikansk" class="ContentMenuBtn block">Afrikans</a>
               </li>
               <li><a href="#indisk" class="ContentMenuBtn block">Indisk</a></li>
+              <li><a href="#jakt" class="ContentMenuBtn block">Tjuvjakt</a></li>
             </ul>
           </div>
         </nav>
@@ -79,11 +83,18 @@
           </div>
         </article>
         <article class="card" id="asiatisk">
-          <picture
-            ><img
+          <picture class="center gallery">
+            <source
+              media="(min-width:680px)"
+              srcset="assets/elefanter/Asiatisk/elefant-asiatisk-300.webp" />
+            <img
               src="assets/elefanter/Asiatisk/elefant-asiatisk-400.webp"
               alt="Asiatisk Elefant"
           /></picture>
+          <div class="gallery">
+            <a href="assets-raw/elefant-asiatisk.png"><img src="assets/elefanter/Asiatisk/elefant-asiatisk-400.webp" alt="" title="Asiatisk"/></a>
+            <a href="images/image2.jpg"><img src="images/thumbs/thumb2.jpg" alt="" title="Beautiful Image"/></a>
+        </div>
           <h2 class="center">Asiatisk elefant</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
@@ -94,6 +105,14 @@
           </p>
         </article>
         <article class="card" id="afrikansk">
+          <picture class="center">
+            <source
+              media="(min-width:680px)"
+              srcset="assets/elefanter/Afrikansk/elefant-afrikansk-300.webp" />
+            <img
+              src="assets/elefanter/Afrikansk/elefant-afrikansk-400.webp"
+              alt="Afrikansk elefant"
+          /></picture>
           <a class="center" href="">Bild</a>
           <h2 class="center">Afrikansk elefant</h2>
           <p>
@@ -105,6 +124,14 @@
           </p>
         </article>
         <article class="card" id="indisk">
+          <picture class="center">
+            <source
+              media="(min-width:680px)"
+              srcset="assets/elefanter/Indisk/elefant-indisk-300.webp" />
+            <img
+              src="assets/elefanter/Indisk/elefant-indisk-400.webp"
+              alt="Indiks elefant"
+          /></picture>
           <a class="center" href="">Bild</a>
           <h2 class="center">Indisk elefant</h2>
           <p>
@@ -116,10 +143,12 @@
           </p>
         </article>
         <article class="card" id="jakt">
-          
           <picture class="center">
-            <source media="(min-width:980px)" srcset="assets-raw/elefant-kedjad.png" />
-            <img src="" alt="" /></picture>
+            <source
+              media="(min-width:980px)"
+              srcset="assets-raw/elefant-kedjad.png" />
+            <img src="" alt=""
+          /></picture>
           <h2 class="center">Tjuvjakt</h2>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit

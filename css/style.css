@@ -11,6 +11,7 @@ body {
 
   /* My color variables */
   --header-primary: white;
+  --header-bg-primary: lightblue;
   --nav-primary: #a7afb3;
   --card-primar: #d3d7d9;
   --card-shadow-primary: rgba(172, 132, 132, 0.582);
@@ -30,7 +31,7 @@ img {
 header {
   color: var(--header-primary);
   /* background-image: var(--header-bg); */
-  background-color: lightblue;
+  background-color: var(--header-bg-primary);
   height: 100px;
   padding: 20px 0;
   width: 100%;
