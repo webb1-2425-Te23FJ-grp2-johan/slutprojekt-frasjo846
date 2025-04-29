@@ -9,6 +9,8 @@ body {
   /* Base 16 px */
   font-size: 16px;
 
+  --grid-change1: 750px;
+
   /* My color variables */
   --header-primary: white;
   --header-bg-primary: lightblue;
@@ -19,14 +21,22 @@ body {
   --card-shadow-primary: rgba(172, 132, 132, 0.582);
   --main-bg-primary: #a9a9a9;
   --footer-bg-primary: #807e7e;
+  --donate-bg-primary: #fae7e8;
 
-  --text-primary: rgb(255, 111, 0);
+  /* --text-primary: rgb(255, 111, 0);
   --logo-prmary: rgb(17, 0, 255);
-  --bg-primary: rgb(109, 0, 129);
+  --bg-primary: rgb(109, 0, 129); */
 
   /* My img variables */
   --header-bg: url(../assets-raw/elefant-asiatisk.png);
 }
+
+.lacquer-regular {
+  font-family: "Lacquer", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 img {
   display: block;
 }
@@ -58,6 +68,11 @@ main {
   max-width: 1500px;
   margin: 0 auto;
 }
+.floating {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
 .block {
   padding: 0.5rem;
   border-radius: 20px;
@@ -69,6 +84,7 @@ main {
   text-decoration: double;
   font-weight: bold;
   margin-left: 20px;
+  padding: 1rem 0;
 }
 
 .center {
@@ -162,13 +178,27 @@ main {
   transform: scale(-1);
 }
 
+.donate {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: var(--donate-bg-primary);
+  border-radius: 4px;
+  padding: 1rem;
+  background-color: var(--card-primar);
+ margin: auto;
+  box-shadow: 0.5rem 0.5rem 0.1rem 0.1rem var(--card-shadow-primary);
+
+}
+
 footer {
   background-color: var(--footer-bg-primary);
   padding: 20px;
   margin: 0;
+  width: 100%;
 }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 750px) {
   .class {
     color: red;
   }
