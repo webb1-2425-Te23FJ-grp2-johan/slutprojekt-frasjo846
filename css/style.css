@@ -15,7 +15,7 @@ body {
   --header-primary: white;
   --header-bg-primary: lightblue;
   --nav-primary: #a7afb3;
-  --nav-wide-bg: rgb(129, 129, 129);
+  --nav-wide-bg: rgb(145, 130, 130);
   --nav-btn-bg: #646363;
   --card-primar: #d3d7d9;
   --card-shadow-primary: rgba(172, 132, 132, 0.582);
@@ -60,6 +60,12 @@ nav {
   background-color: var(--nav-primary);
   cursor: pointer;
 }
+
+.MainPage{
+  font-size: 1.5rem;
+  color: var(--nav-btn-bg);
+}
+
 main {
   background-color: var(--main-bg-primary);
   margin-top: 0.5rem;
@@ -178,7 +184,7 @@ main {
   transform: scale(-1);
 }
 
-.donate {
+#donate {
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -194,9 +200,16 @@ main {
 footer {
   background-color: var(--footer-bg-primary);
   padding: 20px;
-  margin: 0;
-  width: 100%;
+  margin: auto;
 }
+
+.divider{
+  display: flex;
+  flex-direction: row;
+  row-gap: 10rem;
+  justify-content: space-evenly;
+}
+
 
 @media screen and (min-width: 750px) {
   .class {
