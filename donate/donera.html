@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=fast_rewind"
     />
     <!-- Splide CSS-->
-    <link rel="stylesheet" href="css/splide.min.css" />
+    <link rel="stylesheet" href="../css/splide.min.css" />
     <!-- Min CSS -->
     <link rel="stylesheet" href="../css/style.css" />
   </head>
@@ -22,26 +22,35 @@
       </picture>
     </header>
     <nav class="MainPage">
-      <span class="material-symbols-outlined">
-        fast_rewind
-        </span>
+      <span class="material-symbols-outlined"> fast_rewind </span>
       <a href="../index.html">Back to main page</a>
     </nav>
     <main class="block">
-      <div class=" center">
-        <img src="../assets/elefanter/Övrigt/elefant-cute-400.webp" alt="" />
-      </div>
       <section class="splide" aria-labelledby="carousel-heading">
-        <h2 id="carousel-heading">Splide Basic HTML Example</h2>
+        <h2 id="carousel-heading">Donate to cute elefants</h2>
 
         <div class="splide__track">
           <ul class="splide__list">
-            <li class="splide__slide">Slide 01</li>
-            <li class="splide__slide">Slide 02</li>
-            <li class="splide__slide">Slide 03</li>
+            <li class="splide__slide center"><img src="../assets/elefanter/Övrigt/elefant-cute-400.webp" alt="" /></li>
+            <li class="splide__slide center"><img src="../assets/elefanter/Afrikansk/elefant-afrikansk-300.webp" alt="" /></li>
+            <li class="splide__slide center"><img src="../assets/världens/världens-200x200.webp" alt="" /></li>
+            <li class="splide__slide center"><h2>hej, donera!!</h2></li>
+            <li class="splide__slide center"><h2>Hörru, donera nu din jävel</h2></li>
+            <li class="splide__slide center"><h2>Du där donera då, donera SKA nu donera din jävel</h2></li>
+            <li class="splide__slide center"><h2>Annars dör du</h2></li>
+            <li class="splide__slide center"><h2>OM</h2></li>
+            <li class="splide__slide center"><h2>3</h2></li>
+            <li class="splide__slide center"><h2>2</h2></li>
+            <li class="splide__slide center"><h2>1</h2></li>
+            <li class="splide__slide center"><h2>0.1</h2></li>
+            <li class="splide__slide center"><h2>Sissta chansen donera nu annars...</h2></li>
+            <li class="splide__slide center">
+              <h2>Do är nu död<span style="font-size: 100px">&#128123;</span></h2>
+            </li>
           </ul>
         </div>
       </section>
+      <section id="DonateBtn" class="card center">Donera</section>
 
       <article class="card">
         <h2>What the money goes to</h2>
@@ -122,11 +131,17 @@
       </div>
       <div class="block">
         <h2>Vad vi står för</h2>
-        <a href="aboutUs/aboutUs.html">AboutUs</a>
+        <a href="../aboutUs/aboutUs.html">AboutUs</a>
       </div>
     </footer>
 
     <!-- Splide JS -->
     <script src="../js/splide.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var splide = new Splide(".splide");
+        splide.mount();
+      });
+    </script>
   </body>
 </html>

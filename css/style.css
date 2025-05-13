@@ -62,8 +62,16 @@ nav {
 }
 
 .MainPage{
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--nav-btn-bg);
+  background-color: var(--nav-primary);
+  border-radius: 20px;
+  border: black groove 2px;
+  padding: 0.2rem 2rem 0.3rem 2rem;
+  margin-bottom: 1rem;
+  position: sticky;
+  z-index: 210;
+  top: 0;
 }
 
 main {
