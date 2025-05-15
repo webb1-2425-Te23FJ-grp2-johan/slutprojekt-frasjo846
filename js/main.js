@@ -3,7 +3,7 @@ const navMenu = document.getElementById("nav-menu");
 const dropdown = document.getElementById("content-drop-down");
 const NavRebuildWith = 680;
 
-navTitle.addEventListener("click", function() {
+navTitle.addEventListener("click", function () {
   navMenu.classList.toggle("hidden");
   dropdown.classList.toggle("invertscale");
 });
@@ -18,4 +18,4 @@ function checkScreenWidth() {
     navTitle.classList.remove("hidden"); // Ensure it's visible on small screens
   }
 }
- //check on page load
+

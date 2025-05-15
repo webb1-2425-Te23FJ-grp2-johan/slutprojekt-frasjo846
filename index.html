@@ -25,9 +25,13 @@
   <body class="lacquer-regular">
     <header class="center">
       <picture>
+        <source media="(max-width: 600px )" srcset="assets/världens/världens-50x50.webp" />
         <img src="assets/världens/världens-100x100.webp" alt="Världens" />
-        <img src="assets-raw/Elefanter.Elefont..TP.png" alt="Elefanter" />
       </picture>
+      <picture>
+        <source media="(max-width: 600px )" srcset="assets/elefanter/Loga/Elefanter.Elefont..TP-250x35.webp" />
+        <img src="assets/elefanter/Loga/Elefanter.Elefont..TP-500x70.webp" alt="Elefanter"
+      /></picture>
     </header>
     <nav class="floating">
       <h2 id="nav-Title">
@@ -152,12 +156,13 @@
       </main>
       <aside>
         <div id="donate" class="center gallery">
-          <a href="assets-raw/elefant-cute.png"><picture class="center">
+          <a href="assets-raw/elefant-cute.png"
+            ><picture class="center">
               <source media="(min-width:680px)" srcset="assets/elefanter/Övrigt/elefant-cute-300.webp" />
               <img src="assets/elefanter/Övrigt/elefant-cute-400.webp" alt="Indisk Elefant" />
             </picture>
           </a>
-          <a href="donate/donera.html"><h2>Donate</h2></a>
+          <a class="linkColor" href="donate/donera.html"><h2>Donate</h2></a>
           <p>Donate=Happy Elefant</p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro fugit, placeat accusamus, alias deleniti fuga ad suscipit qui molestiae
@@ -178,7 +183,7 @@
       </div>
       <div class="block">
         <h2>Vad vi står för</h2>
-        <a href="aboutUs/aboutUs.html">AboutUs</a>
+        <a class="linkColor" href="aboutUs/aboutUs.html">AboutUs</a>
       </div>
     </footer>
 

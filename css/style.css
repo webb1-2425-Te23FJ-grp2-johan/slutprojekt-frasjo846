@@ -22,6 +22,7 @@ body {
   --main-bg-primary: #a9a9a9;
   --footer-bg-primary: #807e7e;
   --donate-bg-primary: #fae7e8;
+  --link-color:rgb(53, 0, 53);
 
   /* --text-primary: rgb(255, 111, 0);
   --logo-prmary: rgb(17, 0, 255);
@@ -51,10 +52,12 @@ header {
 header picture {
   display: flex;
   justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 header picture img {
-  width: 70%;
-  height: 70%;
+  width: 90%;
+  height: 90%;
 }
 nav {
   background-color: var(--nav-primary);
@@ -205,6 +208,10 @@ main {
 
 }
 
+#DonateBtn{
+  background-color: orange;
+}
+
 footer {
   background-color: var(--footer-bg-primary);
   padding: 20px;
@@ -218,11 +225,21 @@ footer {
   justify-content: space-evenly;
 }
 
+.linkColor{
+  color: var(--link-color);
+}
+
+#popup{
+  position: fixed;
+  top: 50%;
+  left: 10%;
+  right: 10%;
+  padding: 5rem 2rem;
+  background-color: white;
+  z-index: 20;
+}
 
 @media screen and (min-width: 750px) {
-  .class {
-    color: red;
-  }
   .cardgrid {
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 1fr;
