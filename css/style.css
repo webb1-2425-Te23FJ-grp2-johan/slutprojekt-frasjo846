@@ -23,9 +23,9 @@ body {
   --card-primar: #d3d7d9;
   --card-shadow-primary: rgba(172, 132, 132, 0.582);
   --main-bg-primary: #a9a9a9;
-  --footer-bg-primary: #807e7e;
-  --donate-bg-primary: #fae7e8;
-  --link-color:rgb(53, 0, 53);
+  --footer-bg-primary: #747272;
+  --donate-bg-primary: #9c9c9c;
+  --link-color: rgb(53, 0, 53);
 
   /* --text-primary: rgb(255, 111, 0);
   --logo-prmary: rgb(17, 0, 255);
@@ -40,12 +40,17 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+.noto-sans{
+  font-weight: 300;
+  font-style: normal;
+}
 
 img {
   display: block;
 }
-picture img{
+picture img {
   border-radius: 10px;
+  display: block;
 }
 header {
   color: var(--header-primary);
@@ -70,7 +75,7 @@ nav {
   cursor: pointer;
 }
 
-.MainPage{
+.MainPage {
   font-size: 2rem;
   color: var(--nav-btn-bg);
   background-color: var(--nav-primary);
@@ -205,16 +210,16 @@ main {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  background-color: var(--donate-bg-primary);
-  border-radius: 4px;
+    background-color: var(--main-bg-primary);
+  /* background-color: var(--donate-bg-primary); */
+  /* border-radius: 4px; */
   padding: 1rem;
-  background-color: var(--card-primar);
- margin: auto;
-  box-shadow: 0.5rem 0.5rem 0.1rem 0.1rem var(--card-shadow-primary);
-
+  /* background-color: var(--card-primar); */
+  margin: auto;
+  /* box-shadow: 0.5rem 0.5rem 0.1rem 0.1rem var(--card-shadow-primary); */
 }
 
-#DonateBtn{
+#DonateBtn {
   background-color: orange;
 }
 
@@ -224,18 +229,18 @@ footer {
   margin: auto;
 }
 
-.divider{
+.divider {
   display: flex;
   flex-direction: row;
   row-gap: 10rem;
   justify-content: space-evenly;
 }
 
-.linkColor{
+.linkColor {
   color: var(--link-color);
 }
 
-#popup{
+#popup {
   position: sticky;
   top: 50%;
   left: 10%;
