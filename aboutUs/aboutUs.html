@@ -15,9 +15,14 @@
   <body class="noto-sans">
     <header class="center">
       <picture>
-        <img src="../assets-raw/Elefanter.Elefont..TP.png" alt="" />
-        <img src="../assets/världens/världens-200x200.webp" alt="" />
+        <source media="(max-width: 600px )" srcset="../assets/världens/världens-100x100.webp" />
+        <source media="(max-width: 300px )" srcset="../assets/världens/världens-50x50.webp" />
+        <img src="../assets/världens/världens-200x200.webp" alt="Världens" />
       </picture>
+      <picture>
+        <source media="(max-width: 600px )" srcset="../assets/elefanter/Loga/Elefanter.Elefont..TP-250x35.webp" />
+        <img src="../assets/elefanter/Loga/Elefanter.Elefont..TP-500x70.webp" alt="Elefanter"
+      /></picture>
     </header>
     <nav class="MainPage">
       <span class="material-symbols-outlined"> fast_rewind </span>
