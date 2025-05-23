@@ -1,7 +1,7 @@
 const navTitle = document.getElementById("nav-Title");
 const navMenu = document.getElementById("nav-menu");
 const dropdown = document.getElementById("content-drop-down");
-const NavRebuildWith = 680;
+const NavRebuildWith = 750;
 
 navTitle.addEventListener("click", function () {
   navMenu.classList.toggle("hidden");

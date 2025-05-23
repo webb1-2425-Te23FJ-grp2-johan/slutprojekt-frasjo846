@@ -40,7 +40,7 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-.noto-sans{
+.noto-sans {
   font-weight: 300;
   font-style: normal;
 }
@@ -210,7 +210,7 @@ main {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-    background-color: var(--main-bg-primary);
+  background-color: var(--main-bg-primary);
   /* background-color: var(--donate-bg-primary); */
   /* border-radius: 4px; */
   padding: 1rem;
@@ -221,6 +221,16 @@ main {
 
 #DonateBtn {
   background-color: orange;
+}
+
+#popup {
+  position: sticky;
+  top: 50%;
+  left: 10%;
+  right: 10%;
+  padding: 5rem 2rem;
+  background-color: white;
+  z-index: 20;
 }
 
 footer {
@@ -238,16 +248,6 @@ footer {
 
 .linkColor {
   color: var(--link-color);
-}
-
-#popup {
-  position: sticky;
-  top: 50%;
-  left: 10%;
-  right: 10%;
-  padding: 5rem 2rem;
-  background-color: white;
-  z-index: 20;
 }
 
 @media screen and (min-width: 750px) {
